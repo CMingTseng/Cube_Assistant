@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/checkPageRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/colorsList"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ly03tv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ly04tv01"
+                android:textSize="12.0dip"
+                android:textStyle="italic" />
+
+            <GridView
+                android:id="@+id/colorsGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="278dp"
+                android:gravity="center"
+                android:numColumns="3" />
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/tryAgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tryAgain" android:layout_weight="1.0" />
+                <Button android:id="@+id/nextFace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nextFace" android:layout_weight="1.0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ly03tv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/red"
+                android:textColorLink="@color/red"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ly03btngoHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goHome" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

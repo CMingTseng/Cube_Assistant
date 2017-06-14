@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly04ll01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ly04ll02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/ly04bt01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ly02bt01" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/explanation" />
+
+    <GridView
+        android:id="@+id/ly04gv01"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_weight="1.24"
+        android:numColumns="3" >
+    </GridView>
+
+    <Button
+        android:id="@+id/ly04bt02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delsolution" />
+
+</LinearLayout>
